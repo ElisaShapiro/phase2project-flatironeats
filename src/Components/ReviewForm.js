@@ -18,7 +18,7 @@ function ReviewForm({ id, setReview }){
 
     return(
         <form onSubmit = {onAddReviewSubmit}>
-            <input type="text" placeholder='Review here' onChange={onAddReview} value={formView}></input>
+            <input type="text" placeholder='Review here....' onChange={onAddReview} value={formView}></input>
             <input type="submit" placeholder="Add New Review"></input>
         </form> 
     )

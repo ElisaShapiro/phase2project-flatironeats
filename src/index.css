@@ -1,3 +1,20 @@
+:root {
+  --turquoise: #00efe1;
+  --mid-turquoise: #14d5c9;
+  --dark-turquoise: #00333f;
+  --black: #030416;
+  --white: #fff;
+  --grey: #d6e2e7;
+  --dark-grey: #7f8a8e;
+  --blue: #338fff;
+  --blue-dark: #145cb3;
+  --purple: #cda2ff;
+  --green: #00ef7c;
+  --color: var(--white);
+  --background: var(--black);
+  --primary: var(--turquoise);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--grey);
 }
 
 code {
@@ -17,13 +35,45 @@ img {
   max-width: 500px;
 }
 
+.logo {
+  color: var(--turquoise);
+  font-size: 1.25em;
+  font-family: Helvetica;
+  margin-right: 0.5rem;
+}
+
+.home-page .welcome{
+  font-family: 'Fira Sans';
+  padding: 0;
+  margin:20px;
+}
+
+.home-page .full-logo .flatiron h1{
+  font-family: 'Trade Gothic';
+  margin: 0px;
+  padding: 0px;
+}
+
+.home-page .full-logo .eats h1{
+  font-family: 'Alacrity Sans Semibold';
+  padding: 0px;
+  margin: 0px;
+  color: green;
+}
+
+.home-page p{
+  font-family:'Fira Code', monospace;
+  margin: 20px;
+  padding: 5px; 
+}
+
 /* NavBar */
 .navigation {
   position: relative;
   flex-direction: row;
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: right;
 }
 
 .navigation li {
@@ -97,6 +147,14 @@ img {
 .menu .content .box .text h4 {
   font-weight: 400;
   color: #111;
+}
+
+#review-button{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .addToCart {

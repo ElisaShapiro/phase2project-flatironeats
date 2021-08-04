@@ -23,10 +23,10 @@ function FoodDetail({ food, onImageClick, setReview }){
             <h4 className="text">Rating: {emoji.repeat(food.rating)}</h4>
             <h4>Reviews: {foodReviewToDisplay} </h4>
             </div>
-            {showReview ? <ReviewForm id={food.id} setReview={setReview}/>
+            <div>{showReview ? <ReviewForm id={food.id} setReview={setReview}/>
                         : 
-                    <button onClick={addReviewClick}>Add Review</button>}
-        </div>
+                    <button id='review-button' onClick={addReviewClick}>Add Review</button>}</div>
+         </div>
     )
 }
 

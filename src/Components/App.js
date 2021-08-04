@@ -10,7 +10,6 @@ import Cart from './Cart';
 function App() {
   const [foods, setFoods] = useState([])
   const [myCart, setMyCart] = useState([])
-  const [review, setReview] = useState('')
   const history = useHistory()
 
   useEffect(() => {
@@ -35,6 +34,7 @@ function App() {
   }
   
   function addFoodToCart(food){
+    alert("Added to Cart!")
     setMyCart([...myCart, food])
   }
   function removeFoodFromCart(id){
@@ -77,7 +77,7 @@ function App() {
           <Cart foods={foods} myCart={myCart} removeFoodFromCart={removeFoodFromCart} purchaseFood={purchaseFood}/>
         </Route>
         <Route exact path="/">
-          <HomePage foods={foods}/>
+          <HomePage />
         </Route>        
       </Switch>
     </div>
